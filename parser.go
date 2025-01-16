@@ -69,7 +69,7 @@ func main() {
 
 		if nowHeight == lastHeight {
 			count += 1
-			if count == 5 {
+			if count == 20 {
 				log.Println("Достигнут конец страницы")
 			break
 			}
