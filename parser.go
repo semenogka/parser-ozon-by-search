@@ -45,7 +45,7 @@ func main() {
 		log.Fatal("не удается подключится к драйверу: ", err)
 	}
 
-	err = driver.Get("https://www.ozon.ru/category/konstruktory-7174/lego-19159896/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=ktuj")
+	err = driver.Get("твой поисковой запрос")
 	if err != nil {
 		log.Fatal("не удалось открыть страницу")
 	}
@@ -69,7 +69,7 @@ func main() {
 
 		if nowHeight == lastHeight {
 			count += 1
-			if count == 20 {
+			if count == 5 {
 				log.Println("Достигнут конец страницы")
 			break
 			}
